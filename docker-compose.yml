@@ -1,0 +1,33 @@
+version: '2.1'
+
+services:
+
+
+    lara-shop-php-image:
+        build:
+            dockerfile: ./docker/images/lara-shop-php-image.Dockerfile
+            args:
+                - UID=${UID:-1000}
+
+    lara-shop-nginx:
+        build:
+            dockerfile: ./docker/nginx/Dockerfile
+        links:
+            - lara-shop-php
+        container_name: lara-shop-nginx
+
+    lara-shop:
+        build:
+            dockerfile: ./docker/Dockerfile
+        container_name: lara-shop
+        links:
+            - lara-shop-php-image
+            - lara-shop-php
+            - lara-shop-nginx
+
+    lara-shop-php:
+        build:
+            dockerfile: ./docker/php/Dockerfile
+        container_name: lara-shop-php
+        depends_on:
+            - lara-shop-php-image 

@@ -1,0 +1,40 @@
+version: '2.1'
+
+services:
+
+    lara-shop-php-image:
+        build:
+            context: .
+
+    lara-shop:
+        restart: unless-stopped
+        build:
+            context: .
+        env_file: .env
+        volumes:
+            - .:/var/www/lara-shop
+
+    lara-shop-nginx:
+        restart: unless-stopped
+        build:
+            context: .
+        ports:
+            - ${NGINX_PORT_80:-48005}:80
+            - ${NGINX_PORT_443:-49005}:443
+        expose:
+            - 80
+            - 443
+        volumes:
+            - ./web:/var/www/lara-shop/public
+
+    lara-shop-php:
+        restart: unless-stopped
+        build:
+            context: .
+        env_file: .env
+        volumes:
+            - .:/var/www/lara-shop
+networks:
+  default:
+    external:
+      name: docker_default
