@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa5f6521-cf74-45c5-8743-ac62eebc09e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker/nginx/sites/lara-shop.conf" afterPath="$PROJECT_DIR$/docker/nginx/sites/lara-shop.conf" />
     </list>
     <ignored path="lara-shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -165,12 +163,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529410414592</updated>
-      <workItem from="1529410415995" duration="1122000" />
+      <workItem from="1529410415995" duration="1254000" />
     </task>
+    <task id="LOCAL-00001" summary="init lara-shop">
+      <created>1529412594211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529412594211</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init lara-shop">
+      <created>1529412610183</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1529412610183</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1122000" />
+    <option name="totallyTimeSpent" value="1254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -197,6 +210,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init lara-shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="init lara-shop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
